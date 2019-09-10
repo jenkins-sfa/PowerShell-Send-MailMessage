@@ -1,2 +1,7 @@
 # PowerShell-Send-MailMessage
 Script para envio de e-mails com usando PowerShell
+
+É comum, em TI, configurarmos scripts para automatizarmos certas tarefas e configurações. Quando se trabalha com o Windows, principalmente, o PowerShell é muito utilizado para a criação desses scripts. E é muito importante você poder ser avisado ou avisar alguém sobre o resultado da execução do script. Isso pode ser automatizado configurando um envio de e-mail por meio do próprio PowerShell utilizando a função Send-MailMessage. Basta usar esta função passando os parâmetros necessários para o envio do e-mail, como -From que é o endereço que será utilizado para enviar a mensagem, -SmtpServer que é o endereço do SMTP deste e-mail, dentre outros parâmetros. A lista completa de parâmetros do Send-MailMessage pode ser vista na documentação da Microsoft, no endereço: 
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-6
+
+O script contido nesse repositório é um exemplo que pode ser utilizado para o envio de e-mail usando o Send-MailMessage com autenticação no servidor SMTP do Google. Você vai notar que para informar a senha de autenticação do e-mail, nós chamamos um arquivo externo contendo a senha encriptada. Essa senha foi encriptada utilizando os procedimentos descritos em um de nossos posts no Instagram, “Encriptando uma sequência de caracteres com Power Shell”, que pode ser conferido aqui: https://www.instagram.com/tv/B2ASU5vnHrL/?utm_source=ig_web_copy_link
